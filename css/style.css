@@ -1,0 +1,579 @@
+.content-navbar {
+  padding: 10px 0;
+}
+.content-navbar .list-navbar-content {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+.content-navbar .list-navbar-content li .link-nav-content {
+  padding: 5px 12px;
+  background: linear-gradient(to bottom, #1b5a6d 0%, #154b59 51%, #0b323c 100%);
+  color: #fff;
+  border-radius: 5px 2px 0 0;
+  border: 1px solid #bbb;
+  text-decoration: none;
+  transition: all 0.5s cubic-bezier(0.26, 0.15, 0.25, 1);
+}
+.content-navbar .list-navbar-content li .link-nav-content:hover {
+  background: linear-gradient(to bottom, #a90329 0%, #8f0222 44%, #6d0019 100%);
+  border-radius: 7px 7px 0 0;
+}
+.content-navbar .list-navbar-content li .dropdown-menu {
+  border: none;
+  border-radius: 0;
+  top: 110%;
+}
+.content-navbar .list-navbar-content li .dropdown-menu li a {
+  transition: all 0.5s ease-in-out;
+  padding: 5px 10px;
+}
+.content-navbar .list-navbar-content li .dropdown-menu li a:hover {
+  background: #33cccc;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2), 0 -2px 2px rgba(0, 0, 0, 0.1);
+  color: #fff;
+}
+.content-navbar .list-navbar-content li .dropdown-menu li.active a {
+  background: #33cccc;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2), 0 -2px 2px rgba(0, 0, 0, 0.1);
+  color: #fff;
+}
+.content-navbar .list-navbar-content li.active a.link-nav-content {
+  background: linear-gradient(to bottom, #a90329 0%, #8f0222 44%, #6d0019 100%);
+  border-radius: 7px 7px 0 0;
+}
+
+.tableStatus {
+  /* border: 1px solid #999;
+  border-radius: 7px; */
+  padding: 0 10px;
+}
+.tableStatus table {
+  text-align: center;
+  background-color: #fff;
+  color: #143740;
+  font-size: 12px;
+}
+.tableStatus table thead tr th {
+  padding: 5px 0;
+}
+.tableStatus table tbody tr td {
+  padding: 5px 0;
+}
+.tableStatus table tbody tr .down {
+  color: #ffc107;
+  font-weight: bold;
+}
+.tableStatus table tbody tr .down svg {
+  width: 15px;
+  padding-left: 5px;
+  fill: #ffc107;
+}
+.tableStatus table tbody tr .up {
+  color: brown;
+  font-weight: bold;
+}
+.tableStatus table tbody tr .up svg {
+  width: 15px;
+  padding-left: 5px;
+  fill: brown;
+}
+
+.content-box-two {
+  padding: 0 15px;
+  margin-top: -10px;
+}
+.content-box-two .card {
+  background-color: #f2f2f2;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+}
+.content-box-two .card .title-card {
+  background: linear-gradient(to bottom, #770000 0%, #ad0000 50%, #ce0018 100%);
+  padding: 5px 10px;
+  color: #fff;
+  border-radius: 5px 5px 0 0;
+  position: relative;
+  cursor: pointer;
+}
+.content-box-two .card .title-card h5 {
+  margin: 0;
+  font-size: 12px;
+}
+.content-box-two .card .title-card span {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  font-size: 25px;
+  z-index: 2;
+}
+.content-box-two .card .body-card {
+  padding: 5px;
+  background-color: #f2f2f2;
+  border: 3px solid #fff;
+  border-top: 0;
+  position: relative;
+}
+.content-box-two .card .body-card .read-more {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  background: linear-gradient(to bottom, #0b323c 0%, #154b59 51%, #1b5a6d 100%);
+  color: #fff;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.content-box-two .card .body-card .read-more i {
+  line-height: 20px;
+}
+.content-box-two .card .body-card h6 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 11px;
+}
+.content-box-two .card .body-card .table {
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+.content-box-two .card .body-card .table tr {
+  padding: 0;
+}
+.content-box-two .card .body-card .table tr:first-child td {
+  padding-top: 0;
+}
+.content-box-two .card .body-card .table tr td {
+  padding: 0;
+  border-top: none;
+}
+.content-box-two .card .body-card .table tr td div {
+  max-height: 0;
+  padding: 0 10px;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: max-height 0.3s, padding 0.3s;
+}
+.content-box-two .card .body-card .table tr.active td div {
+  max-height: 100px;
+  padding: 5px;
+  transition: max-height 0.6s, padding 0.6s;
+  border-bottom: 1px solid #ddd;
+}
+.content-box-two .card.gradent-bule .title-card {
+  background: linear-gradient(to bottom, #0b323c 0%, #154b59 51%, #1b5a6d 100%);
+}
+.content-box-two .card.gradent-bule .body-card tr.auto-width td div {
+  max-height: 100px;
+  padding: 5px;
+  border-bottom: 1px solid #ddd;
+  transition: max-height 0.6s, padding 0.6s;
+}
+
+.investigations .nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+}
+.investigations .nav li {
+  float: auto;
+  margin-bottom: 3px;
+  margin-top: 5px;
+  min-width: 100px;
+}
+.investigations .nav li a {
+  background-color: #fff;
+  color: #333;
+  padding: 5px 10px;
+  border: 1px solid #999;
+  border-bottom: 1px solid #999;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+.investigations .nav li a span.icon {
+  float: right;
+  margin-left: 10px;
+  margin-top: 3px;
+}
+.investigations .nav li.active a {
+  background-color: #0071ce;
+  color: #fff;
+  border: none;
+}
+.investigations .nav li.active a i {
+  color: #fff;
+}
+.investigations .tab-pane table thead {
+  background-color: #0070c0;
+  color: #fff;
+}
+.investigations .tab-pane table thead tr th {
+  text-align: center;
+}
+.investigations .tab-pane table tbody tr {
+  text-align: center;
+  background-color: #d0e3ea;
+}
+.investigations .tab-pane table tbody tr td {
+  padding: 5px 0 !important;
+}
+.investigations .tab-pane table tbody tr td span.icon {
+  padding-right: 5px;
+}
+.investigations .tab-pane table tbody tr td span.icon:nth-child(2) {
+  color: #673ab7;
+}
+.investigations .tab-pane table tbody tr:nth-child(odd) {
+  background-color: #e9f1f5;
+}
+.investigations .tab-pane .Investigations-content {
+  border: 2px solid #ddd;
+  padding: 5px;
+  background-color: #bbb;
+}
+.investigations .tab-pane .Investigations-content .nav {
+  background-color: #bbb;
+}
+.investigations .tab-pane .Investigations-content .nav li a {
+  padding: 5px 8px;
+}
+.investigations .tab-pane .Investigations-content .nav li:first-child a {
+  border-color: #0070c0;
+}
+.investigations .tab-pane .Investigations-content .nav li:first-child a i {
+  color: #0070c0;
+}
+.investigations .tab-pane .Investigations-content .nav li:nth-child(2) a {
+  border-color: #f00;
+}
+.investigations .tab-pane .Investigations-content .nav li:nth-child(2) a i {
+  color: #f00;
+}
+.investigations .tab-pane .Investigations-content .nav li:nth-child(3) a {
+  border-color: #f7903b;
+}
+.investigations .tab-pane .Investigations-content .nav li:nth-child(3) a i {
+  color: #f7903b;
+}
+.investigations .tab-pane .Investigations-content .nav li:nth-child(4) a {
+  border-color: #00b050;
+}
+.investigations .tab-pane .Investigations-content .nav li:nth-child(4) a i {
+  color: #00b050;
+}
+.investigations .tab-pane .Investigations-content .nav li:nth-child(5) a {
+  border-color: #403152;
+}
+.investigations .tab-pane .Investigations-content .nav li:nth-child(5) a i {
+  color: #403152;
+}
+.investigations .tab-pane .Investigations-content .nav li:first-child.active a {
+  background-color: #0071ce;
+  color: #fff;
+  border-color: #0071ce;
+}
+.investigations .tab-pane .Investigations-content .nav li:first-child.active a i {
+  color: #fff;
+}
+.investigations .tab-pane .Investigations-content .nav li:nth-child(2).active a {
+  background-color: #f00;
+  color: #fff;
+}
+.investigations .tab-pane .Investigations-content .nav li:nth-child(2).active a i {
+  color: #fff;
+}
+.investigations .tab-pane .Investigations-content .nav li:nth-child(3).active a {
+  background-color: #f79031;
+  color: #fff;
+}
+.investigations .tab-pane .Investigations-content .nav li:nth-child(3).active a i {
+  color: #fff;
+}
+.investigations .tab-pane .Investigations-content .nav li:nth-child(4).active a {
+  background-color: #00b050;
+  color: #fff;
+}
+.investigations .tab-pane .Investigations-content .nav li:nth-child(4).active a i {
+  color: #fff;
+}
+.investigations .tab-pane .Investigations-content .nav li:nth-child(5).active a {
+  background-color: #403152;
+  color: #fff;
+}
+.investigations .tab-pane .Investigations-content .nav li:nth-child(5).active a i {
+  color: #fff;
+}
+
+.color-red {
+  background-color: #f00;
+  color: #fff;
+}
+
+.color-Purple {
+  background-color: #403152;
+  color: #fff;
+}
+
+.color-orange {
+  background-color: #f79031;
+  color: #fff;
+}
+
+.color-green {
+  background-color: #00b050;
+  color: #fff;
+}
+
+.color-blue {
+  background-color: #0071ce;
+  color: #fff;
+}
+
+.History .card {
+  background-color: #f2f2f2;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+}
+.History .card .title-card {
+  padding: 5px 10px;
+  color: #fff;
+  border-radius: 5px 5px 0 0;
+  position: relative;
+  cursor: pointer;
+}
+.History .card .title-card h5 {
+  margin: 0;
+  font-size: 12px;
+}
+.History .card .title-card span {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  font-size: 25px;
+  z-index: 2;
+}
+.History .card.gradent-bule .title-card {
+  background: linear-gradient(to bottom, #0b323c 0%, #154b59 51%, #1b5a6d 100%);
+}
+.History .card .body-card {
+  padding: 5px;
+  background-color: #f2f2f2;
+  border: 3px solid #fff;
+  border-top: 0;
+  position: relative;
+}
+.History .card .body-card table {
+  font-size: 12px;
+  margin-bottom: 0;
+}
+.History .card .body-card table tr:nth-child(even) {
+  background-color: #e9f1f5;
+}
+.History .card .body-card table tr td {
+  border-bottom: 1px solid #ddd;
+  border-top: none;
+  padding: 5px;
+}
+.History .card .body-card table tr td:first-child {
+  font-weight: bold;
+}
+.History .card .table-card {
+  font-size: 12px;
+  margin-bottom: 0;
+}
+.History .card .table-card thead tr {
+  background: linear-gradient(to bottom, #0b323c 0%, #154b59 51%, #1b5a6d 100%);
+  color: #fff;
+}
+.History .card .table-card thead tr th {
+  padding: 5px 10px;
+}
+.History .card .table-card tbody tr td {
+  padding: 5px 10px;
+}
+
+.LAB .content-search {
+  display: flex;
+  justify-content: space-between;
+}
+.LAB .content-search .box-selsect label {
+  margin-right: 10px;
+}
+.LAB .content-search .box-selsect .form-control {
+  display: inline-block;
+  width: auto;
+}
+
+.Collapse-table {
+  padding: 10px 0;
+}
+.Collapse-table .Investigations-content {
+  padding: 5px;
+}
+.Collapse-table .Investigations-content .nav {
+  padding: 20px 0;
+}
+.Collapse-table .Investigations-content .nav li a {
+  padding: 5px 8px;
+  background-color: #fff;
+}
+.Collapse-table .Investigations-content .nav li a i {
+  margin-left: 10px;
+}
+.Collapse-table .Investigations-content .nav li:first-child a {
+  border-color: #0070c0;
+}
+.Collapse-table .Investigations-content .nav li:first-child a i {
+  color: #0070c0;
+}
+.Collapse-table .Investigations-content .nav li:nth-child(2) a {
+  border-color: #f00;
+}
+.Collapse-table .Investigations-content .nav li:nth-child(2) a i {
+  color: #f00;
+}
+.Collapse-table .Investigations-content .nav li:nth-child(3) a {
+  border-color: #f7903b;
+}
+.Collapse-table .Investigations-content .nav li:nth-child(3) a i {
+  color: #f7903b;
+}
+.Collapse-table .Investigations-content .nav li:nth-child(4) a {
+  border-color: #00b050;
+}
+.Collapse-table .Investigations-content .nav li:nth-child(4) a i {
+  color: #00b050;
+}
+.Collapse-table .Investigations-content .nav li:nth-child(5) a {
+  border-color: #403152;
+}
+.Collapse-table .Investigations-content .nav li:nth-child(5) a i {
+  color: #403152;
+}
+.Collapse-table .Investigations-content .nav li:first-child.active a {
+  background-color: #0071ce;
+  color: #fff;
+  border-color: #0071ce;
+}
+.Collapse-table .Investigations-content .nav li:first-child.active a i {
+  color: #fff;
+}
+.Collapse-table .Investigations-content .nav li:nth-child(2).active a {
+  background-color: #f00;
+  color: #fff;
+}
+.Collapse-table .Investigations-content .nav li:nth-child(2).active a i {
+  color: #fff;
+}
+.Collapse-table .Investigations-content .nav li:nth-child(3).active a {
+  background-color: #f79031;
+  color: #fff;
+}
+.Collapse-table .Investigations-content .nav li:nth-child(3).active a i {
+  color: #fff;
+}
+.Collapse-table .Investigations-content .nav li:nth-child(4).active a {
+  background-color: #00b050;
+  color: #fff;
+}
+.Collapse-table .Investigations-content .nav li:nth-child(4).active a i {
+  color: #fff;
+}
+.Collapse-table .Investigations-content .nav li:nth-child(5).active a {
+  background-color: #403152;
+  color: #fff;
+}
+.Collapse-table .Investigations-content .nav li:nth-child(5).active a i {
+  color: #fff;
+}
+.Collapse-table .Investigations-content .tab-pane table thead {
+  background-color: #0070c0;
+  color: #fff;
+  border: 2px solid #fff;
+}
+.Collapse-table .Investigations-content .tab-pane table thead tr th {
+  text-align: center;
+}
+.Collapse-table .Investigations-content .tab-pane table tbody tr {
+  text-align: center;
+  background-color: #d0e3ea;
+  border: 1px solid #10253f;
+}
+.Collapse-table .Investigations-content .tab-pane table tbody tr th {
+  padding: 5px 10px !important;
+  background-color: #fff;
+}
+.Collapse-table .Investigations-content .tab-pane table tbody tr th span.icon {
+  padding-right: 5px;
+}
+.Collapse-table .Investigations-content .tab-pane table tbody tr th span.icon:nth-child(2) {
+  color: #673ab7;
+}
+.Collapse-table .Investigations-content .tab-pane table tbody tr td {
+  padding: 5px 0 !important;
+}
+.Collapse-table .Investigations-content .tab-pane table tbody tr td svg {
+  width: 10px;
+  fill: #f00;
+}
+.Collapse-table .Investigations-content .tab-pane table tbody tr:nth-child(odd) {
+  background-color: #e9f1f5;
+}
+
+body {
+  background-color: #f0f0f0;
+}
+
+.nav-bar {
+  background: url(../Images/navbar.png) no-repeat;
+  height: 47px;
+}
+
+.aside-bar {
+  background: url(../Images/aside.png) no-repeat;
+  width: 215px;
+  height: calc(100vh - 47px);
+  float: left;
+}
+
+.content {
+  width: calc(100vw - 233px);
+  max-height: calc(100vw - 47px);
+  float: left;
+}
+.content .Header-top {
+  background: url(../Images/aside-top.png) no-repeat;
+  height: 67px;
+}
+.content .radio-button {
+  display: flex;
+  justify-content: space-evenly;
+}
+.content .radio-button .radio {
+  margin: 0;
+}
+.content .radio-button .radio:first-child span {
+  display: inline-block;
+  margin: 5px 0;
+  font-weight: bold;
+}
+.content .radio-button .radio label {
+  font-size: 16px;
+}
+.content .radio-button .radio label input[type=radio] {
+  width: 15px;
+  height: 15px;
+  position: relative;
+  top: 2px;
+}
+.content .radio-button .radio label input[type=radio]:checked + span {
+  color: #2196f3;
+  font-weight: bold;
+}
+
+.text-red {
+  color: #d43f3a;
+}
+
+/*# sourceMappingURL=style.css.map */
